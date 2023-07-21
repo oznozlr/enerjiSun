@@ -63,7 +63,7 @@
         align-content: flex-start;
         
     }
-    
+    /* ---- header-start   ----  */
     .navBar{
         width: 1920px;
         
@@ -74,13 +74,19 @@
         color: #FFFFFF;
         font-family: 'Rajdhani', sans-serif;
         z-index: 1;
+        height: 75px;
         
     }
-    .navBar ul{
+    .navBar ul  {
         text-decoration: none;
         list-style: none;
         display:none;
         gap: 50px;
+        
+    }
+    .navBar ul a{
+      color: #FFFFFF;
+      text-decoration: none;
     }
     
     .navBar .logo img{
@@ -120,7 +126,39 @@
     .menuIcon{
         margin-right: 25px;
     }
-    
+    /* --- header-end -----   */
+
+    /* ----- hero  -----   */
+
+    .hero{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border: 1px solid red;
+      margin-top: 120px;
+    }
+    .heroLeft{
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    .heroLeft h5{
+      color: #FFD84D;
+      font-family: Rajdhani;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 56px;
+    }
+    .heroLeft p{
+      color: #FFFFFF;
+
+      font-family: Rajdhani;
+      font-size: 85px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 124px;
+    }
     
     
 }
@@ -133,9 +171,12 @@
         width: 1170px;
         margin: 0 auto;
         position: relative;
+        display: flex;
+        
     }
     .bgImage{
         position: absolute;
+        width: 100%;
     }
     .menuIcon{
         display: none;
@@ -149,7 +190,10 @@
     
     .navBar ul{
         display: flex;
+        flex-direction: row;
+        color: #FFFFFF;
     }
+    
     
 
 }
